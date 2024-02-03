@@ -5,7 +5,7 @@
 - system calls are actually the interrupts called by a software.
 ### VonNeumann Arch:
 
-![Alt text](image.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/cca04c25-4d7d-476b-b44e-8986e8104543)
     
 - Buses
     - Data bus: carries data among the memory units
@@ -14,7 +14,7 @@
 - Von Neumann Bottleneck: It is the sequential processing of the instructions one at a time.
 ### Harvard Arch:
     
-![Alt text](image-1.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/aeeb7214-0050-48d9-abd3-0ce4e91817f0)
 
 - The basic diff is that it has diff buses for transferring instrns and data unlike vonNeumann architecture that cannot do both simultaneously.
 - The instrns and the simple data are stored in diff sections of memory.
@@ -31,7 +31,8 @@ V. SW(Status Word-9): It contains a variety of information
 
 ```
 
-![Alt text](image-2.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/70f16022-4a11-4edb-a06d-00c427b7b1e6)
+
 
 - Pipelining in 8086 processor:  
     - It helps in execution of multiple instrns simulataneously (does fetch and exeute simultaneously).
@@ -46,7 +47,8 @@ V. SW(Status Word-9): It contains a variety of information
     - Arbitrated ended: read/write to multi addresses.
     - Interleaved ended: read from one and write to another.
 
-![Alt text](image-3.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/310c8582-3764-4f69-b4aa-8698e61161d2)
+
 
 #### Graceful Degradation
 -  Graceful degradation refers to the system's ability to maintain essential functionality and continue operating in a degraded or reduced-performance state when faced with failures, errors, or resource limitations.
@@ -91,11 +93,13 @@ end(): normal halt
 
 #### System calls
 
-![Alt text](image-4.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/92d19747-3687-4190-8bec-e27bfa289320)
+
 
 - Functions or syscalls on Windows and Linux systems
 
-![Alt text](image-5.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/7e9be8bf-137d-424c-bad6-76b40a9bea7e)
+
 
 - Locking of Data:
     This is to share the data between two programs and ensure that no other program can acess them in between.<b>
@@ -125,9 +129,11 @@ They are used to identify the details of a riunning process.
     A multiuser operating system is designed to allow multiple users to access and use a computer system concurrently
 
 ### How does OS starts?
-![Alt text](image-6.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/f03f49a7-821b-4bf7-a971-6fb8158d6acf)
 
-![Alt text](image-7.png)
+
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/e1b346bb-4629-4f0e-aedc-b411172bb130)
+
 
 
 ## Process Management
@@ -146,9 +152,11 @@ In Java programs, as we type 'Java Program' to run the class "Program" . It will
 - PCB(Process Control Block)
     - It is the representation of a process specific details.
 
-    ![Alt text](image-8.png)
+    ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/43c55222-6ede-4695-ae26-bec724bed81a)
 
-    ![Alt text](image-9.png)
+
+    ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/91d2e87c-0f92-437a-9600-0e07f5238357)
+
 
 - Process Scheduling
 
@@ -158,12 +166,15 @@ In Java programs, as we type 'Java Program' to run the class "Program" . It will
     - Scheduling Queues
         - Job queue: As a process enters the system it goes inside the job queue.
         - Ready Queue: It has the processes waiting to be executed.
-            ![Alt text](image-10.png)
+          
+             ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/ae85ae25-f9a9-4c02-ba50-3dd83afc665f)
+
 
             It basically acts as a linked list whose head points to the next control block.
         - Device Queue: The processes that are waiting for an I/O device to execute some process are stored inside this queue. 
 
-        ![Alt text](image-11.png)
+        ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/1a4921f5-7e66-4fe3-bc09-bb47e202bffc)
+
     - Scheduler
         - Long-Term Scheduler/Job scheduler: It chooses which program to get inside the job queue. It takles a long period of time as schedulling more than one program may take a long period of time. But it is absent in many general OS systems to increase speed while decreasing the performance of the programs.
 
@@ -171,7 +182,8 @@ In Java programs, as we type 'Java Program' to run the class "Program" . It will
 
         - Mid-term Scheduler: It helps in swapping of the programs that can be executed afterwards using the swapping pointer. <b>Swapping</b> is a process of storing the process outside the queue and getting it back to the queue after a short period of time so that the CPU can execute other programs easily. It swaps the processes with generally inactive sessions or sleeping processes and other waste processes between RAM and Disk.
 
-        ![Alt text](image-12.png)
+        ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/dd3288c4-347e-4205-b27a-ca3f23c0c73d)
+
 
 ### Process Termination
 
@@ -235,7 +247,8 @@ In Java programs, as we type 'Java Program' to run the class "Program" . It will
     - Unbounded Queue: 
         There is infinite capacity of the queue and thus the sender never has to block in order to send messages.
 
-![Alt text](image-13.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/da4968a7-33a4-4497-9788-2c70b27c8d57)
+
 
 
 ### Client-Server comms
@@ -416,7 +429,8 @@ handling that signal.
         - It is done by making a data-structure "Lightweight Process".
         - The thread library is like a virtual processor on which the user can schedule his threads.
 
-        ![Alt text](image-19.png)
+        ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/51565d67-0b65-42fd-a1e7-79cd541264a6)
+
 
         - The application is supplied with a number of kernel threads by the kernel and then the scheduler chooses which thread to assign which work.
         - This choosing procedure is called `upcall` and its events are called `upcall events`.
@@ -435,9 +449,11 @@ handling that signal.
             - It includes synchronizing and schedulling info of the thread.
             - It includes the kernel thread and the pointer to the kernel stack.
 
-            ![Alt text](image-20.png)
+            ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/5dd318a6-bfc9-4676-843f-13e1e1b7cde0)
 
-            ![Alt text](image-21.png)
+
+            ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/98f7f814-9743-4bba-b358-a57ac651ee06)
+
 
 
 # Process Synchronization
@@ -557,7 +573,8 @@ handling that signal.
     - The Readers and Writers
         - The writers are the ones that want to update the database while the readers are the one that want to just read and observe the database.
         
-        ![Alt text](image-22.png)
+        ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/467b42f8-afe6-45d5-adac-989188992afa)
+
 
         - Here we have the reading process that will signal the read() mutex or release the read lock so that the read operation can be performed.
 
@@ -606,7 +623,8 @@ handling that signal.
             - ADT(Abstract Data Types)
                 They encapsulate data inside the set of functions to operate on them.
 
-                ![Alt text](image-23.png)
+                ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/fbef4ef6-6df8-4d43-b90c-08a7e2706283)
+
 
                 - This is one of the solution to the dining-philosophers problem.
             - Events 
@@ -615,7 +633,8 @@ handling that signal.
                 They are in signaled state or non-signaled state. Signaled state is when the thread will not block when acquiring the object.
 
 
-                ![Alt text](image-24.png)
+                ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/49af858e-66d2-4ac1-a2f4-b905afe466a6)
+
 
             - Spinlocks are not efficient in single threaded kernels thus we use kernel preemption here.
             -Named Sempahores: They are related to the actual filenames and can be shared between different files or processes.
@@ -823,7 +842,7 @@ handling that signal.
                 - Then the scheduler selects the process with the shortest virtual runtime to execute.
                 - Here a red black tree data structure is used to implement the tasks as the shortest vruntime processes are added at the leaf nodes of the tree.
 
-                ![Alt text](image-30.png)
+                ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/6b7672fe-cd83-45bc-b12b-0ef4829598fe)
 
             - The dispatcher executes the idle thread in case if no thread is available to execute.
 
@@ -846,14 +865,17 @@ handling that signal.
             
         - Algorithm schedulling
 
-            ![Alt text](image-31.png)
+            ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/6c0d23f0-fd7a-4222-86a0-d541781b8ac6)
+  
+            ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/5eb09860-e40e-4cde-a92e-96b0f6336165)
 
         - Little's Formula
             n = average queue length
             lambda = avg arrival rate for new prcoess inside the queue.
             W = avg waiting time of a process inside the queue.
 
-             ![Alt text](image-32.png)  
+             ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/b3eb754a-0a34-4775-8ee0-44d0a7173c07)
+  
 
 ## Deadlocks
 
@@ -894,15 +916,18 @@ handling that signal.
     - The rectangles are the resources and the circles are the processes.
 
 
-        ![Alt text](image-33.png)
+        ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/35011b88-74fc-4845-bb58-4c39410ae43f)
+
 
     - `Cycle` in a resource allocation graph depicts a `deadlock state`.
 
-    ![Alt text](image-34.png)
+    ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/878865fb-0f98-4668-b23d-b919ad7f1466)
+
 
     - The graph is in the cycle is not a sufficient condition for the deadlock state of the system.
 
-    ![Alt text](image-35.png)
+    ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/258839e6-304d-4283-8df2-44558bf89568)
+
 
     - Here the process P4 can release the process instance R2 and then can be used by the other process P3.
 
@@ -916,7 +941,8 @@ handling that signal.
 
 - Witness is just like a method that prevents deadlock , it gives warnings when the system has executed processes or have resources out of order 
 
-    ![Alt text](image-36.png) 
+    ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/c9b928e1-9c12-446f-8bd5-85883ab62947)
+ 
 
 - Deadlock avoidance algorithms
     
@@ -979,7 +1005,8 @@ handling that signal.
 
             If it is not known by the compiler that where will the process will be placed in the memory then the program makes a relocatable memory.
 
-            ![Alt text](image-37.png)
+            ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/c0ce6e25-8228-439b-8d63-b2bb40f2c935)
+
 
             The starting addresses have to be changed as soon as the addresses of the binary executable of the later section changes.
 
@@ -1016,7 +1043,8 @@ handling that signal.
         - This involves storing the memory into a backing store and then taking it back inside the executable to use it.
 
 
-        ![Alt text](image-38.png)
+        ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/4ba3e43e-4031-492c-8c29-8b43cd865b24)
+
 
         The processes inside the memory backing store are also stored inside the ready queue.
 
@@ -1076,7 +1104,8 @@ handling that signal.
             
             - Segmentation hardware
 
-                ![Alt text](image-39.png)
+               ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/84f43006-3f32-4583-88c2-71f78637a892)
+
 
                 - This segments are stores inside the segment table.
                 - Each entry inside the segment table has a segment base and segment limit.
@@ -1094,7 +1123,8 @@ handling that signal.
                     bytes long.
 
 
-![Alt text](image-40.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/fd671398-c939-4061-99be-80ec71db72a6)
+
 
 
 
@@ -1118,12 +1148,15 @@ handling that signal.
 
 
 
-![Alt text](image-41.png)
-
-![Alt text](image-42.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/e6274561-bd77-4a43-8508-b9d13639f894)
 
 
-![Alt text](image-43.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/63d57e87-999a-4cb6-8c27-e5d9cbbcfb86)
+
+
+
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/61ca86c3-e674-426d-bd5b-d7b39fa45950)
+
 
 - Hardware Support
 
@@ -1147,8 +1180,9 @@ handling that signal.
             - TLB is the solution of this problem:
                 
                 It is like a dictionary in python that has key and values. TLB lookup is the process that finds the value of the key corresponding to the item that the process provides.This uses instruction pipeline that makes the lookup more faster.
+              
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/2ddfb22f-7833-438d-8b18-8291570b03bc)
 
-![Alt text](image-44.png)
 
 1. The CPU has the logical address of the data that has the page number and the page offset .
 2. The page offset is stored and the page number is mapped to the page table.
@@ -1191,7 +1225,8 @@ handling that signal.
                     - They have its first head element as the virtual page number that have to be matched first to follow that path of the pages' data.
 
 
-                    ![Alt text](image-45.png)
+                    ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/004a6893-41ff-41b0-b064-66f8bd1a395b)
+
 
                     - Inverted Page Tables
 
@@ -1202,7 +1237,8 @@ handling that signal.
 
                         `MAIN MEMORY FINDING PROCEDURE`
 
-![Alt text](image-46.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/e5e07deb-bebd-40c7-ad2a-dba19ab12469)
+
 
 - ARM architecture
 
@@ -1223,7 +1259,8 @@ handling that signal.
 - Less I/O operations would be needed as less swapping operations will be needed.
 - Virtual address space is a contiguous space of memory addresses.
 
-![Alt text](image-47.png)
+![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/5fc8e46a-8a2b-4695-8e3e-87b39dcca24c)
+
 
 - Here we can easily see how stack grows downwards while the heap grows upwards.
 - Virtual address spaces that have holes or is non-contiguous is known as sparse address space.
@@ -1241,7 +1278,9 @@ handling that signal.
         `invalid` bit means the page might be legal or illegal but is not present inside the memory.
 - Page Fault
     - It occurs when the process is trying to access the page that is not even inside the memory.
-        ![Alt text](image-48.png)
+      
+        ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/fe0e76ed-b748-4ad6-8d08-320a1c5c8b9a)
+
     
     - If Page Fault occurs then, hardware trap is triggered and then the page inside the backing store or the secondary storage is retained back into the page fault and then the page table is reset. But this occurs only when the page was valid but not present inside the memory.
 
@@ -1256,7 +1295,9 @@ handling that signal.
 - Copy-On-Write
     - We have to reduce the number of pages that must be carried by the new process which is spawned by the `fork` system call.
     - The `fork` system call spawns a process that will have the same page resources as the parent process. If either process writes in the shared pages of both processes then those shared pages are copied for both of the processes.
-        ![Alt text](image-49.png)
+      
+        ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/6b9cc8d0-acb2-4d03-adf5-b4d73fc4fb14)
+
 
     - The above image shows the copy of Page C when it is overwritten by the CPU.
     - `vfork()` is the system call that creates a process in virtual space but it does not use copy-on-write and thus if the child process alters the shared pages then the altered pages will appear for the parent process once it resumes to work again.
@@ -1282,7 +1323,8 @@ handling that signal.
 
             - When a page has to be replaces then the oldest page is chosen to be taken out of the memory.
 
-            ![Alt text](image-50.png)
+            ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/9ebb43d2-9da0-46fe-8bfb-6ab67debfa0c)
+
 
             - The fifo page replacement algortihm always replace the pldest reference and never replace if the reference is already inside the reference queue but also in reference string.
 
@@ -1293,9 +1335,11 @@ handling that signal.
 
             - `Replace the page that has not been used for a very long time`.
             
-            ![Alt text](image-51.png)
+            ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/c5d560b7-e493-483b-a9ae-793d9adcfde4)
 
-            ![Alt text](image-52.png)
+
+            ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/6c05e2e2-71f7-41dd-9329-2d350914463d)
+
 
             - If the page reference already exists inside the queue then the count is incremented unless the page reference that is referenced most later in the future is replaced.
 
@@ -1309,7 +1353,8 @@ handling that signal.
 
             - The counter is incremented for every page reference inside the reference string. This can be used to store the time of all the page references and thus decipher which page reference was used least recently
 
-            ![Alt text](image-53.png)
+            ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/07307549-9fb4-45e7-be3b-73fcaa0317ab)
+
 
             - Stack approach:
 
@@ -1368,7 +1413,8 @@ handling that signal.
 
                     The processes are assigned frames according to their respective size
                     
-                    ![Alt text](image-54.png)
+                    ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/a80b09b9-124e-4334-901e-21c542fa940e)
+
 
                 - The above both algorithms treat the high priority and the low priority processes same as each other and thus we can also use proportion based on their priorities for proportional allocation.
 
@@ -1396,7 +1442,8 @@ handling that signal.
 
                     - As the pages are replaced by one process from another then this chain continues and this results in multiple page faults and multiple page replacements that empties the ready queue and the page replacement cannot be done any further. This results in lesser CPU performance. The scheduler then scheduled multiprogramming processes so that to increase the performance of the CPU but it further decreases the performance if the page faults occur in this process too causing more multiprogramming processes to be scheduled by the scheduler.
 
-                    ![Alt text](image-55.png)
+                    ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/a95ae93d-fd35-47b8-bf2e-7475d65500fa)
+
 
                 - Prevention 
 
@@ -1411,7 +1458,8 @@ handling that signal.
 
                     If the page fault frquency is high then the process needs more frames else the frames available are surplus.
 
-                    ![Alt text](image-56.png)
+                   ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/de638e32-d92e-4737-b2f8-7ca393261d3f)
+
 
             - Memory Mapped Files
 
@@ -1422,7 +1470,8 @@ handling that signal.
                 - `MapViewOfFile` function establishes a view of the file inside the virtual memory.
                 - The shared memory is called `SharedObject` that is to be mapped by both of the processes in their virtual space addresses.`MapViewOfFile` function returns a pointer to this shared memory object.
 
-                ![Alt text](image-57.png)
+                ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/8fbdad2a-8b93-4699-9840-8d66460db41e)
+
 
                 - `UnMapViewOfFile` function removes the mapping of the file.
             
@@ -1445,7 +1494,8 @@ handling that signal.
                         - A slab is a set of one or more physically contiguous pages.
                         - A cache consists of one or more slabs.
 
-                        ![Alt text](image-58.png)
+                        ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/49722e3b-1f27-4af5-8755-91956bef4799)
+
                         
                         - The kernel objects are assigned to the cache memory that are then assigned to the slab as physically contiguous memory allocations.
                         - The slab initially has objects marked as `free` that can be used to satisfy the request of the cache memory.
@@ -1496,7 +1546,8 @@ handling that signal.
 - Magnetic Disks
     - Head crash is when the head is contacted with the rotating disk that causes damage to it and cannot be repaired easily.
 
-    ![Alt text](image-59.png)
+   ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/097cac7b-f4c3-496b-8687-e05b79eb33e4)
+
 
     - Transfer rate is the rate at which the data flows between the drive and the computer.
     - Seek time is the time to move the disk arm to the desired cylinder.
@@ -1541,7 +1592,8 @@ handling that signal.
     - FCFS Algorithm
         First come First served basis.
 
-        ![Alt text](image-60.png)
+        ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/8b1cbff0-66d6-4027-bd55-8f79161bfcc0)
+
     
     - SSTF Scheduling
 
@@ -1550,20 +1602,23 @@ handling that signal.
         - This needs head movement of more number of cylinders than the FCFS algorithm but it improves the efficiency of the system.
         - But this can lead to request starvation as the request that is very far away from the head pointer may have come very early inside the queue but it cannot be executed until there is a request with the shorter job than it near the head pointer.
 
-        ![Alt text](image-61.png)
+       ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/e91bb0c0-ce27-41a5-b022-0ba2d6a27ecd)
+
 
     - SCAN Scheduling
 
         - As the head reaches the end of the disk while reading it then it reverses its direction and does it back and forth and thus this is called `Elevator Algorithm`.
         - Consider the head is at `53` and moving towards the initial position of `0`. Then it will move towards `37` and `14` next and then it will reverse ots direction at `0` and then access elements `65,67,...` .This decreases the number of cylinders required at a very lower rate.
 
-        ![Alt text](image-62.png)
+        ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/4c71bcb2-95ea-44aa-bab1-43544c96f196)
+
 
     - C-Scan scheduling
 
         - Circular Scan Scheduling
 
-            ![Alt text](image-63.png)
+            ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/1e232db5-1946-46cb-8f64-654781a5f12b)
+
 
     - LOOK Scheduling
 
@@ -1594,7 +1649,8 @@ handling that signal.
 
             - Sector sparing is to replace these bad blocks with spare blocks or it is called forwarding.
 
-            ![Alt text](image-64.png)
+            ![image](https://github.com/it4ch1-007/MA_notes/assets/133276365/d7736647-ea18-45e1-ae3e-a26cb99ba098)
+
 
             - Sector slipping is to slip the blocks by one each so that the bad block data can be mapped to the block next to it. 
 
